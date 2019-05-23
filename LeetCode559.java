@@ -1,7 +1,6 @@
 package LeetCode;
 
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
 /**
@@ -10,19 +9,6 @@ import java.util.Queue;
  * @date 2019年5月19日下午11:41:40 description:N叉树的最大深度
  *       第一种想法是DFS递归写法求N叉树的深度。第二种想法是层序遍历N叉树求N叉树深度。
  */
-class Node {
-	public int val;
-	public List<Node> children;
-
-	public Node() {
-	}
-
-	public Node(int _val, List<Node> _children) {
-		val = _val;
-		children = _children;
-	}
-};
-
 public class LeetCode559 {
 	public int maxDepth(Node root) { // DFS递归写法
 		if (root == null)
